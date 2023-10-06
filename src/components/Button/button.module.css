@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.loadMoreBtn {
+    cursor: pointer;
+
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #ffd52d;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 20px;
+    color: #ffd52d;
+    outline: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.loadMoreBtn:hover {
+    transform: scale(1.03);
+}

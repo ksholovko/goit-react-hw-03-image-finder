@@ -28,6 +28,10 @@ export class App extends Component {
       this.fetchPictures();
     }
 
+    if (prevState.page !== this.state.page) {
+      this.fetchPictures();
+    }
+
   }
  
     
@@ -65,11 +69,9 @@ export class App extends Component {
 
   
   loadMoreImages = () => {
+
     let newPage = this.state.page + 1;
-
     this.setState({ page: newPage, status: "loading more" });
-
-   this.fetchPictures();
 
   }
 
